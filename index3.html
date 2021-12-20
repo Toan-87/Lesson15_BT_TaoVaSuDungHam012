@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<!--Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->
+<script>
+    // function tinhGiaiThua(a) {
+    //     if (a === 2)
+    //         return 2;
+    //     return a * tinhGiaiThua(a - 1);
+    // }
+    //
+    // let num = prompt('nhập số')
+    // alert(tinhGiaiThua(num));
+    function tinhGiaiThua(a) {
+        let gt = 1;
+        for (let i = a; i > 0; i--) {
+            gt = gt * i;
+        }return gt;
+    }
+    let num = prompt('nhập số')
+    alert(tinhGiaiThua(num));
+
+</script>
+</body>
+</html>

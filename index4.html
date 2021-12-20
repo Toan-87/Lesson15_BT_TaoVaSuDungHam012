@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(arr) {
+        let check = true;
+        if (isNaN(arr)) {
+            check = false;
+        }
+        return check;
+
+    }
+
+    let arr = parseInt(prompt("Nhập chuỗi"));
+    let result = check(arr);
+    if (result === true) {
+        alert("Đây là ký tự số");
+    } else {
+        alert("Đây không phải là ký tự số")
+    }
+</script>
+</body>
+</html>

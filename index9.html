@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<!--Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.\-->
+<!--Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.-->
+<script>
+    function checkNum(arr,str) {
+        let index = -1;
+        for (let i = 0; i < arr.length; i++) {
+            if (str === arr[i]) {
+                index = i;
+            }
+        }
+        return index;
+    }
+    let newArr = [];
+    let length = parseFloat(prompt('Nhập độ dài chuỗi'));
+    for (let i = 0; i < length; i++) {
+        newArr[i] = prompt('Nhập phần tử thứ '+ i);
+    }
+    let str = prompt('nhập ký tự cần tìm');
+    let index = checkNum(newArr, str)
+    if (index != -1) {
+        alert('Số bạn nhập có trong chuỗi bạn nhập' + ' Vị Trí ' + index);
+    }
+    else {
+        alert('Số bạn nhập không có trong chuỗi bạn nhập');
+    }
+</script>
+</body>
+</html>

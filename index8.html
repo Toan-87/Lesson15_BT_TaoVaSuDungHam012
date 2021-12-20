@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<!--Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó-->
+<script>
+    function change (arr) {
+        let firt = 0;
+        let last = arr.length-1;
+        while (firt < last) {
+            let b = arr[firt]
+            arr[firt] = arr[last];
+            arr[last] = b
+            firt++
+            last--
+        }
+        return arr
+    }
+    let newArr = [];
+    let doDai = parseInt(prompt("Nhập độ dài mảng"));
+    for (let i = 0; i < doDai; i++) {
+        newArr[i] = prompt("Nhập phần tử thứ " + i);
+    }
+    alert("Mảng sau đảo ngược là " + change(newArr));
+
+
+</script>
+</body>
+</html>
